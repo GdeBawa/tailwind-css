@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+  </head>
+  <body class="bg-gray-200 text-gray-900 font-sans p-6">
+    <div class="bg-white rounded-lg shadow-lg p-6">
+      <h3 class="text-3xl font-medium mb-2">Judul Card</h3>
+      <p class="text-red-600 tezt-sm">Deskripsi singkat tentang card</p>
+      <a href="#" class="text-blue-500 text-sm mt-4 inline-block"
+        >Baca Selengkapnya</a
+      >
+    </div>
+
+    <br />
+    <hr class="border-2" />
+    <br />
+
+    <div class="container mx-auto">
+      <div class="flex flex-wrap -mx-4">
+        <div class="card p-4">
+          <a
+            href=""
+            class="card_link block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden"
+          >
+            <div class="card_image relative pb-4 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1480497490787-505ec076689f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80"
+                alt="Image of a mountain landscape"
+              />
+            </div>
+            <div class="card_content p-4">
+              <span
+                class="badge inline-block px-2 py-1 leading-none bg-green-200 text-green-800 rounded-full font-semibold uppercase tracking-wide text-xs"
+                >Recommended</span
+              >
+              <h2 class="card_title mt-2 mb-2 font-bold">Explore the Great Outdoor</h2>
+              <p class="card_description text-sm">
+                Experience the beauty of nature and disconnect from the world in
+                our remote cabin in the woods. Perfect for couples or solo
+                adventures
+              </p>
+              <div class="card_price mt-3 flex items-center">
+                <span class="card_currency text-sm font-semibold">$</span>&nbsp;<span class="card_amount font-bold text-xl">80</span>&nbsp;<span class="card_unit text-sm font-semibold">/night</span>
+              </div>
+            </div>
+            <div class="card_footer p-4 border-t border-b text-xs text-gray-700">
+              <span class="card_icon flex items-center mb-1"><i class="fa-solid fa-bed mr-2 text-gray-900"></i> 2 beds </span>
+              <span class="card_icon flex items-center"> <i class="fa-solid fa-bath text-gray-900 mr-2"></i> 1 bath </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

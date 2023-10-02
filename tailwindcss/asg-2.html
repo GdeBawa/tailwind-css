@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asg-2</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+
+  <body class="p-10 pb-10">
+    <h4 class="text-center text-gray-400">HUBUNGI KAMI</h4>
+    <h1 class="font-extrabold text-center text-3xl">
+      Kontak <span class="text-indigo-600">Kami</span>
+    </h1>
+    <div class="mt-10 mx-auto w-3/5">
+      <div class="flex justify-between md:flex-wrap">
+        <div class="w-1/2">
+          <label for="nama" class="block font-bold text-gray-500 mt-4"
+            >Nama Depan</label
+          >
+          <input
+            type="text"
+            class="w-[90%] px-3 py-2 p-2 leading-tight border-2 border-red-500 rounded focus:outline-none focus:shadow-outline bg-gray-200"
+            id="nama"
+            placeholder="Jane"
+          />
+          <h6 class="text-red-500 italic text-xs mt-3">Kolom ini wajib diisi.</h6>
+        </div>
+        <div class="w-1/2">
+          <label for="nama" class="block font-bold text-gray-500 mt-4"
+            >NAMA BELAKANG</label
+          >
+          <input
+            type="text"
+            class="w-full px-3 py-2 leading-tight rounded focus:outline-none focus:shadow-outline bg-gray-200"
+            id="nama"
+            placeholder="Doe"
+          />
+        </div>
+      </div>
+      <div>
+        <label for="email" class="block font-bold text-gray-500 mt-4"
+          >ALAMAT EMAIL</label
+        >
+        <input
+          type="text"
+          class="w-full px-3 py-2 leading-tight rounded focus:outline-none focus:shadow-outline bg-gray-200"
+          id="nama"
+          placeholder="*************@******.**"
+        />
+      </div>
+      <div>
+        <label for="Pesan" class="block font-bold text-gray-500 mt-4"
+          >PESAN ANDA</label
+        >
+        <textarea
+          class="w-full px-3 py-2 leading-tight rounded focus:outline-none focus:shadow-outline bg-gray-200"
+          id="pesan"
+        ></textarea>
+      </div>
+      <div class="flex justify-between items-center mt-4">
+        <div>
+          <label class="inline-flex items-center">
+            <input
+              type="checkbox"
+              class="form-checkbox h-4 w-4 text-gray-600"
+            /><span class="font-bold text-gray-500 ml-2 text-sm"
+              >Kirimkan newsletter kami!</span
+            >
+          </label>
+        </div>
+        <div>
+          <button
+            class="bg-indigo-600 hover:bg-indigo-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="button"
+          >
+            Kirim
+          </button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br>
+    <hr class="outline-dotted outline-1 outline-offset-3" />
+    <br>
+    <br />
+    <div>
+      <div class="w-4/6 mx-auto">
+        <h3 class="font-semibold">Invoices</h3>
+      </div>
+      <div class="overflow-x-auto">
+        <div class="table-responsive">
+          <table class="w-4/6 mx-auto max-w-none text-base">
+            <thead class="bg-gray-200 text-gray-600 uppercase border-2 border-white rounded-xl shadow-lg text-xs font-semibold">
+              <tr class="">
+                <td class="py-1 px-2">klien / invoice</td>
+                <td class="py-1">jumlah</td>
+                <td class="py-1">keluar / jatuh tempo</td>
+                <td class="py-1">status</td>
+                <td class="py-1 px-1"></td>
+              </tr>
+            </thead>
+            <tbody class="">
+              <tr class="border-b-2">
+                <td class="flex items-center mt-4 mb-4">
+                  <img src="/pict/kyd.jpg" alt="" class="w-7  ml-2 rounded-full" />
+                  <p class="ml-2 text-xs">Molly Sanders <br />0001</p>
+                </td>
+                <td class="ml-4 text-xs">$20.000 <br />USD</td>
+                <td class="ml-2 text-xs mt-4">
+                  28 September 2019 <br />Jatuh tempo dalam 3 hari 
+                </td>
+                <td class="pr-14">
+                  <button
+                    class="bg-lime-200 text-gray-600 rounded-xl px-5 py-1 text-xs"
+                  >
+                    Lunas
+                  </button>
+                </td>
+                <td>
+                  <ul class="flex items-center">
+                    <div>.</div>
+                    <div>.</div>
+                    <div>.</div>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="border-b-2">
+                <td class="flex items-center mt-4 mb-4">
+                  <img src="/pict/alf.png" alt="" class="w-7 ml-2 rounded-full" />
+                  <p class="ml-2 text-xs">Durma Almuk <br />0002</p>
+                </td>
+                <td class="ml-2 text-xs">$15.000 <br />USD</td>
+                <td class="ml-2 text-xs mt-4">
+                  23 September 2019 <br />Melewati batas pembayaran 
+                </td>
+                <td class="pr-14">
+                  <button
+                    class="bg-yellow-300 text-gray-700 rounded-xl px-5 py-1 text-xs"
+                  >
+                    Terlambat
+                  </button>
+                </td>
+                <td>
+                  <ul class="flex items-center">
+                    <div>.</div>
+                    <div>.</div>
+                    <div>.</div>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="border-b-2">
+                <td class="flex items-center jus mt-4 mb-4">
+                  <img src="/pict/brm.png" alt="" class="w-7 ml-2 rounded-full" />
+                  <p class="ml-2 text-xs">Lex Luthor <br />0003</p>
+                </td>
+                <td class="ml-2 text-xs">$30.000 <br />USD</td>
+                <td class="ml-2 text-xs mt-4">
+                  25 September 2019 <br />Jatuh tempo hari ini
+                </td>
+                <td class="pr-14">
+                  <button
+                    class="bg-red-500 text-gray-800 rounded-xl px-5 py-1 text-xs"
+                  >
+                    Jatuh Tempo
+                  </button>
+                </td>
+                <td>
+                  <ul class="flex items-center">
+                    <div>.</div>
+                    <div>.</div>
+                    <div>.</div>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

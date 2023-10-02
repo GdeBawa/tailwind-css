@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/fontawesome-free/css/all.min.css" />
+  </head>
+  <body class="bg-blue-bg text-white">
+    <!-- Navigasi -->
+    <nav class="bg-blue-nav">
+      <div class="flex flex-row justify-around mx-auto w-5/6">
+        <!-- Logo -->
+        <div class="flex flex-row items-center">
+          <img
+            src="/Assets Tailwind Final Project/cts.png"
+            alt="logo"
+            class="h-24"
+          />
+          <h3 class="text-xs font-bold sm:text-sm md:text-xl lg:text-2xl">
+            E-Commerce Buku
+          </h3>
+        </div>
+        <!-- Menu -->
+        <div
+          class="flex flex-row items-center font-bold text-sm sm:text-sm md:text-xl lg:text-3xl"
+        >
+          <button class="mx-4">
+            <a href="/tailwindcss/project/homepage.html"
+              ><i class="fa-solid fa-gear font-light"></i
+            ></a>
+          </button>
+          <button class="mx-4">
+            <a href="/tailwindcss/project/product-list.html"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </button>
+          <button class="mx-4">
+            <a href="/tailwindcss/project/cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </button>
+          <button class="mx-4">
+            <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Konten -->
+    <div class="mx-auto w-7/12">
+      <h1 class="mt-28 underline underline-offset-8 font-bold text-3xl">
+        My Profile
+      </h1>
+
+      <div class="border border-border-color rounded-md px-4 py-6 mt-12">
+        <div class="flex justify-between items-center">
+          <!-- Identitas -->
+          <div class="flex flex-row items-center">
+            <div class="p-3">
+              <img
+                src="/Assets Tailwind Final Project/profile.jpg"
+                alt="profile"
+                class="h-24 rounded-full"
+              />
+            </div>
+            <div>
+              <h3 class="font-semibold">Lorem, ipsum.</h3>
+              <p class="font-thin">Manager</p>
+              <p class="font-thin">Denpasar</p>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="bg-blue-btn px-9 py-3 rounded-md mr-2">
+            <button class="font-semibold text-xl tracking-wide">
+              Edit <i class="fa-regular fa-pen-to-square text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personal Information -->
+      <div class="border border-border-color rounded-md px-4 py-10 mt-24">
+        <div class="flex flex-col ml-3">
+          <div class="flex flex-row justify-between items-center mb-12">
+            <h2 class="font-bold text-2xl">Personal Information</h2>
+            <div class="bg-blue-btn px-9 py-3 rounded-md mr-2">
+              <button class="font-semibold text-xl tracking-wide items-center">
+                Edit <i class="fa-regular fa-pen-to-square text-xl"></i>
+              </button>
+            </div>
+          </div>
+          <div class="ml-7">
+            <div
+              class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-y-14 text-xl"
+            >
+              <div>
+                <h2 class="text-grey-text pb-4">First Name</h2>
+                <h2>Lorem</h2>
+              </div>
+              <div>
+                <h2 class="text-grey-text pb-4">Last Name</h2>
+                <h2>Ipsum</h2>
+              </div>
+              <div>
+                <h2 class="text-grey-text pb-4">Email address</h2>
+                <h2>loremipsum@gmail.com</h2>
+              </div>
+              <div>
+                <h2 class="text-grey-text pb-4">Phone</h2>
+                <h2>+628123456789</h2>
+              </div>
+              <div>
+                <h2 class="pb-4">Bio</h2>
+                <h2>Manager</h2>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Address -->
+      <div class="border border-border-color rounded-md px-4 py-10 mt-24">
+        <div class="flex flex-col ml-3">
+          <div class="flex flex-row justify-between items-center mb-12">
+            <h2 class="font-bold text-2xl items-center">Address</h2>
+            <div class="bg-blue-btn px-9 py-3 rounded-md mr-2">
+              <button class="font-semibold text-xl tracking-wide">
+                Edit <i class="fa-regular fa-pen-to-square text-xl"></i>
+              </button>
+            </div>
+          </div>
+          <div class="ml-7">
+            <div
+              class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-y-14 text-xl"
+            >
+              <div>
+                <h2 class="text-grey-text pb-4">Country</h2>
+                <h2>Lorem</h2>
+              </div>
+              <div>
+                <h2 class="text-grey-text pb-4">City / State</h2>
+                <h2>Ipsum</h2>
+              </div>
+              <div>
+                <h2 class="text-grey-text pb-4">Postal code</h2>
+                <h2>loremipsum@gmail.com</h2>
+              </div>
+              <div>
+                <h2 class="text-grey-text pb-4">Address</h2>
+                <h2>Lorem Ipsum Street</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-7/12 mx-auto mt-52 mb-5">
+      <div class="flex justify-between">
+        <p class="font-thin tracking-wide">
+          &copy; 2023 Cek Toko Sebelah. All Rights Reserved.
+        </p>
+        <div class="flex flex-row text-2xl">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter pl-3"></i></a>
+          <a href=""><i class="fa-brands fa-github pl-3"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./tailwindcss/index.html",
+    "./tailwindcss/breakpoint.html",
+    "./tailwindcss/asg-1.html",
+    "./tailwindcss/form-btn-table.html",
+    "./tailwindcss/asg-2.html",
+    "./tailwindcss/flexbox-grid.html",
+    "./tailwindcss/asg-3.html",
+    "./tailwindcss/card.html",
+    "tailwindcss/asg-4.html",
+    "tailwindcss/project/profile.html",
+    "tailwindcss/project/product-list.html",
+    "tailwindcss/project/cart.html",
+    "tailwindcss/project/homepage.html",
+  ],
+  theme: {
+    extend: {},
+    colors: {
+      "blue-nav": "#0C134F",
+      "blue-bg": "#1D267D",
+      white: "#fff",
+      "blue-btn": "#2F58CD",
+      "grey-text": "#c2c2c2",
+      "red-text": "#de6363",
+      "aside-blue": "#1D387D",
+      "star-yeloow": "#FFD95A",
+      "border-color": "#a3a3a3",
+      "filter-border-color": "#111",
+      "aside-text-color": "#d9d9d9",
+      "orange-edit": "#fdba74",
+    },
+  },
+  plugins: [],
+};

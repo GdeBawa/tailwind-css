@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProductList</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/fontawesome-free/css/all.min.css" />
+  </head>
+  <body class="bg-blue-bg text-white">
+    <!-- Navigasi -->
+    <nav class="bg-blue-nav">
+      <div class="flex flex-row justify-around mx-auto w-5/6">
+        <!-- Logo -->
+        <div class="flex flex-row items-center">
+          <img
+            src="/Assets Tailwind Final Project/cts.png"
+            alt="logo"
+            class="h-24"
+          />
+          <h3 class="text-xs font-bold sm:text-sm md:text-xl lg:text-2xl">
+            E-Commerce Buku
+          </h3>
+        </div>
+        <!-- Menu -->
+        <div class="flex flex-row items-center font-bold text-sm sm:text-sm md:text-xl lg:text-3xl">
+          <button class="mx-4"><a href="/tailwindcss/project/homepage.html"><i class="fa-solid fa-gear font-light"></i></a></button>
+          <button class="mx-4"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+          <button class="mx-4"><a href="/tailwindcss/project/cart.html"><i class="fa-solid fa-cart-shopping"></i></a></button>
+          <button class="mx-4"><a href="/tailwindcss/project/profile.html"><i class="fa-regular fa-circle-user"></i></a></button>
+        </div>
+     </div>
+    </nav>
+
+    <!-- Konten -->
+    <div class="container mx-auto flex flex-col lg:flex-row mt-10">
+      <aside class="w-1/6 h-fit bg-aside-blue p-4 rounded-lg ml-6">
+        <h2 class="text-aside-text-color text-sm">Filters</h2>
+        <hr class="mb-6 mt-4 text-aside-text-color" />
+        <h2 class="text-sm font-semibold mb-5">Sort By</h2>
+        <ul class="text-xs text-aside-text-color ml-2">
+          <li>
+            <i
+              class="fa-solid fa-circle border border-filter-border-color rounded-full mb-5 text-white"
+            ></i>
+            <a href="">Price - Low to High</a>
+          </li>
+          <li>
+            <i
+              class="fa-solid fa-circle border border-filter-border-color rounded-full mb-5 text-white"
+            ></i>
+            <a href="">Price - Low to High</a>
+          </li>
+        </ul>
+        <h2 class="text-sm font-semibold mb-5">Ratings</h2>
+        <ul class="text-xs text-aside-text-color ml-2">
+          <li>
+            <i
+              class="fa-solid fa-circle border border-filter-border-color rounded-full mb-5 text-white"
+            ></i>
+            <a href="">Price - Low to High</a>
+          </li>
+          <li>
+            <i
+              class="fa-solid fa-circle border border-filter-border-color rounded-full mb-5 text-white"
+            ></i>
+            <a href="">Price - Low to High</a>
+          </li>
+          <li>
+            <i
+              class="fa-solid fa-circle border border-filter-border-color rounded-full mb-5 text-white"
+            ></i>
+            <a href="">Price - Low to High</a>
+          </li>
+          <li>
+            <i
+              class="fa-solid fa-circle border border-filter-border-color rounded-full mb-5 text-white"
+            ></i>
+            <a href="">Price - Low to High</a>
+          </li>
+        </ul>
+        <h2 class="text-sm font-semibold mb-5">Other Filters</h2>
+        <ul class="text-xs text-aside-text-color ml-2">
+          <li>
+            <i
+              class="fa-solid fa-circle border border-filter-border-color rounded-full mb-5 text-white"
+            ></i>
+            <a href="">Price - Low to High</a>
+          </li>
+          <li>
+            <i
+              class="fa-solid fa-circle border border-filter-border-color rounded-full mb-5 text-white"
+            ></i>
+            <a href="">Price - Low to High</a>
+          </li>
+        </ul>
+      </aside>
+      <main class="w-4/6">
+        <div class="flex flex-col mx-8">
+          <div class="flex flex-row justify-between mb-8 text-xl px-4">
+            <h1>All eBooks (15)</h1>
+            <button class="p-1"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:gird-cols-3 gap-6">
+            <div class="card mx-auto border border-aside-text-color rounded-md">
+              <div class="flex flex-wrap">
+                <a href="" class="overflow-hidden">
+                  <div class="card_image relative overflow-hidden">
+                    <img
+                      src="/Assets Tailwind Final Project/front-view-stacked-books-ladders-education-day.jpg"
+                      alt="books"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div class="card_konten py-4 px-12">
+                    <h2 class="card_title mb-2 font-semibold text-lg">
+                      Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="card_description text-xs font-extralight mb-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum molestiae, voluptatum dolorem
+                    </p>
+                    <div class="card_ratings text-star-yeloow mb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card_price flex justify-between items-center">
+                      <h1 class="font-semibold text-base pb-2">$99</h1>
+                      <button
+                        class="bg-blue-btn rounded-md px-1 py-1 font-thin text-xs"
+                      >
+                        Add to Cart +
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card mx-auto border border-aside-text-color rounded-md">
+              <div class="flex flex-wrap">
+                <a href="" class="overflow-hidden">
+                  <div class="card_image relative overflow-hidden">
+                    <img
+                      src="/Assets Tailwind Final Project/front-view-stacked-books-ladders-education-day.jpg"
+                      alt="books"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div class="card_konten py-4 px-12">
+                    <h2 class="card_title mb-2 font-semibold text-lg">
+                      Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="card_description text-xs font-extralight mb-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum molestiae, voluptatum dolorem
+                    </p>
+                    <div class="card_ratings text-star-yeloow mb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card_price flex justify-between items-center">
+                      <h1 class="font-semibold text-base pb-2">$99</h1>
+                      <button
+                        class="bg-blue-btn rounded-md px-1 py-1 font-thin text-xs"
+                      >
+                        Add to Cart +
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card mx-auto border border-aside-text-color rounded-md">
+              <div class="flex flex-wrap">
+                <a href="" class="overflow-hidden">
+                  <div class="card_image relative overflow-hidden">
+                    <img
+                      src="/Assets Tailwind Final Project/front-view-stacked-books-ladders-education-day.jpg"
+                      alt="books"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div class="card_konten py-4 px-12">
+                    <h2 class="card_title mb-2 font-semibold text-lg">
+                      Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="card_description text-xs font-extralight mb-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum molestiae, voluptatum dolorem
+                    </p>
+                    <div class="card_ratings text-star-yeloow mb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card_price flex justify-between items-center">
+                      <h1 class="font-semibold text-base pb-2">$99</h1>
+                      <button
+                        class="bg-blue-btn rounded-md px-1 py-1 font-thin text-xs"
+                      >
+                        Add to Cart +
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card mx-auto border border-aside-text-color rounded-md">
+              <div class="flex flex-wrap">
+                <a href="" class="overflow-hidden">
+                  <div class="card_image relative overflow-hidden">
+                    <img
+                      src="/Assets Tailwind Final Project/front-view-stacked-books-ladders-education-day.jpg"
+                      alt="books"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div class="card_konten py-4 px-12">
+                    <h2 class="card_title mb-2 font-semibold text-lg">
+                      Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="card_description text-xs font-extralight mb-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum molestiae, voluptatum dolorem
+                    </p>
+                    <div class="card_ratings text-star-yeloow mb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card_price flex justify-between items-center">
+                      <h1 class="font-semibold text-base pb-2">$99</h1>
+                      <button
+                        class="bg-blue-btn rounded-md px-1 py-1 font-thin text-xs"
+                      >
+                        Add to Cart +
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card mx-auto border border-aside-text-color rounded-md">
+              <div class="flex flex-wrap">
+                <a href="" class="overflow-hidden">
+                  <div class="card_image relative overflow-hidden">
+                    <img
+                      src="/Assets Tailwind Final Project/front-view-stacked-books-ladders-education-day.jpg"
+                      alt="books"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div class="card_konten py-4 px-12">
+                    <h2 class="card_title mb-2 font-semibold text-lg">
+                      Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="card_description text-xs font-extralight mb-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum molestiae, voluptatum dolorem
+                    </p>
+                    <div class="card_ratings text-star-yeloow mb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card_price flex justify-between items-center">
+                      <h1 class="font-semibold text-base pb-2">$99</h1>
+                      <button
+                        class="bg-blue-btn rounded-md px-1 py-1 font-thin text-xs"
+                      >
+                        Add to Cart +
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card mx-auto border border-aside-text-color rounded-md">
+              <div class="flex flex-wrap">
+                <a href="" class="overflow-hidden">
+                  <div class="card_image relative overflow-hidden">
+                    <img
+                      src="/Assets Tailwind Final Project/front-view-stacked-books-ladders-education-day.jpg"
+                      alt="books"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div class="card_konten py-4 px-12">
+                    <h2 class="card_title mb-2 font-semibold text-lg">
+                      Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="card_description text-xs font-extralight mb-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum molestiae, voluptatum dolorem
+                    </p>
+                    <div class="card_ratings text-star-yeloow mb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card_price flex justify-between items-center">
+                      <h1 class="font-semibold text-base pb-2">$99</h1>
+                      <button
+                        class="bg-blue-btn rounded-md px-1 py-1 font-thin text-xs"
+                      >
+                        Add to Cart +
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card mx-auto border border-aside-text-color rounded-md">
+              <div class="flex flex-wrap">
+                <a href="" class="overflow-hidden">
+                  <div class="card_image relative overflow-hidden">
+                    <img
+                      src="/Assets Tailwind Final Project/front-view-stacked-books-ladders-education-day.jpg"
+                      alt="books"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div class="card_konten py-4 px-12">
+                    <h2 class="card_title mb-2 font-semibold text-lg">
+                      Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="card_description text-xs font-extralight mb-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum molestiae, voluptatum dolorem
+                    </p>
+                    <div class="card_ratings text-star-yeloow mb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card_price flex justify-between items-center">
+                      <h1 class="font-semibold text-base pb-2">$99</h1>
+                      <button
+                        class="bg-blue-btn rounded-md px-1 py-1 font-thin text-xs"
+                      >
+                        Add to Cart +
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card mx-auto border border-aside-text-color rounded-md">
+              <div class="flex flex-wrap">
+                <a href="" class="overflow-hidden">
+                  <div class="card_image relative overflow-hidden">
+                    <img
+                      src="/Assets Tailwind Final Project/front-view-stacked-books-ladders-education-day.jpg"
+                      alt="books"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div class="card_konten py-4 px-12">
+                    <h2 class="card_title mb-2 font-semibold text-lg">
+                      Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="card_description text-xs font-extralight mb-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum molestiae, voluptatum dolorem
+                    </p>
+                    <div class="card_ratings text-star-yeloow mb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card_price flex justify-between items-center">
+                      <h1 class="font-semibold text-base pb-2">$99</h1>
+                      <button
+                        class="bg-blue-btn rounded-md px-1 py-1 font-thin text-xs"
+                      >
+                        Add to Cart +
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card mx-auto border border-aside-text-color rounded-md">
+              <div class="flex flex-wrap">
+                <a href="" class="overflow-hidden">
+                  <div class="card_image relative overflow-hidden">
+                    <img
+                      src="/Assets Tailwind Final Project/front-view-stacked-books-ladders-education-day.jpg"
+                      alt="books"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div class="card_konten py-4 px-12">
+                    <h2 class="card_title mb-2 font-semibold text-lg">
+                      Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="card_description text-xs font-extralight mb-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum molestiae, voluptatum dolorem
+                    </p>
+                    <div class="card_ratings text-star-yeloow mb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card_price flex justify-between items-center">
+                      <h1 class="font-semibold text-base pb-2">$99</h1>
+                      <button
+                        class="bg-blue-btn rounded-md px-1 py-1 font-thin text-xs"
+                      >
+                        Add to Cart +
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card mx-auto border border-aside-text-color rounded-md">
+              <div class="flex flex-wrap">
+                <a href="" class="overflow-hidden">
+                  <div class="card_image relative overflow-hidden">
+                    <img
+                      src="/Assets Tailwind Final Project/front-view-stacked-books-ladders-education-day.jpg"
+                      alt="books"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div class="card_konten py-4 px-12">
+                    <h2 class="card_title mb-2 font-semibold text-lg">
+                      Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="card_description text-xs font-extralight mb-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum molestiae, voluptatum dolorem
+                    </p>
+                    <div class="card_ratings text-star-yeloow mb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card_price flex justify-between items-center">
+                      <h1 class="font-semibold text-base pb-2">$99</h1>
+                      <button
+                        class="bg-blue-btn rounded-md px-1 py-1 font-thin text-xs"
+                      >
+                        Add to Cart +
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card mx-auto border border-aside-text-color rounded-md">
+              <div class="flex flex-wrap">
+                <a href="" class="overflow-hidden">
+                  <div class="card_image relative overflow-hidden">
+                    <img
+                      src="/Assets Tailwind Final Project/front-view-stacked-books-ladders-education-day.jpg"
+                      alt="books"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div class="card_konten py-4 px-12">
+                    <h2 class="card_title mb-2 font-semibold text-lg">
+                      Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="card_description text-xs font-extralight mb-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum molestiae, voluptatum dolorem
+                    </p>
+                    <div class="card_ratings text-star-yeloow mb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card_price flex justify-between items-center">
+                      <h1 class="font-semibold text-base pb-2">$99</h1>
+                      <button
+                        class="bg-blue-btn rounded-md px-1 py-1 font-thin text-xs"
+                      >
+                        Add to Cart +
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card mx-auto border border-aside-text-color rounded-md">
+              <div class="flex flex-wrap">
+                <a href="" class="overflow-hidden">
+                  <div class="card_image relative overflow-hidden">
+                    <img
+                      src="/Assets Tailwind Final Project/front-view-stacked-books-ladders-education-day.jpg"
+                      alt="books"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div class="card_konten py-4 px-12">
+                    <h2 class="card_title mb-2 font-semibold text-lg">
+                      Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="card_description text-xs font-extralight mb-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum molestiae, voluptatum dolorem
+                    </p>
+                    <div class="card_ratings text-star-yeloow mb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card_price flex justify-between items-center">
+                      <h1 class="font-semibold text-base pb-2">$99</h1>
+                      <button
+                        class="bg-blue-btn rounded-md px-1 py-1 font-thin text-xs"
+                      >
+                        Add to Cart +
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card mx-auto border border-aside-text-color rounded-md">
+              <div class="flex flex-wrap">
+                <a href="" class="overflow-hidden">
+                  <div class="card_image relative overflow-hidden">
+                    <img
+                      src="/Assets Tailwind Final Project/front-view-stacked-books-ladders-education-day.jpg"
+                      alt="books"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div class="card_konten py-4 px-12">
+                    <h2 class="card_title mb-2 font-semibold text-lg">
+                      Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="card_description text-xs font-extralight mb-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum molestiae, voluptatum dolorem
+                    </p>
+                    <div class="card_ratings text-star-yeloow mb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card_price flex justify-between items-center">
+                      <h1 class="font-semibold text-base pb-2">$99</h1>
+                      <button
+                        class="bg-blue-btn rounded-md px-1 py-1 font-thin text-xs"
+                      >
+                        Add to Cart +
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card mx-auto border border-aside-text-color rounded-md">
+              <div class="flex flex-wrap">
+                <a href="" class="overflow-hidden">
+                  <div class="card_image relative overflow-hidden">
+                    <img
+                      src="/Assets Tailwind Final Project/front-view-stacked-books-ladders-education-day.jpg"
+                      alt="books"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div class="card_konten py-4 px-12">
+                    <h2 class="card_title mb-2 font-semibold text-lg">
+                      Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="card_description text-xs font-extralight mb-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum molestiae, voluptatum dolorem
+                    </p>
+                    <div class="card_ratings text-star-yeloow mb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card_price flex justify-between items-center">
+                      <h1 class="font-semibold text-base pb-2">$99</h1>
+                      <button
+                        class="bg-blue-btn rounded-md px-1 py-1 font-thin text-xs"
+                      >
+                        Add to Cart +
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card mx-auto border border-aside-text-color rounded-md">
+              <div class="flex flex-wrap">
+                <a href="" class="overflow-hidden">
+                  <div class="card_image relative overflow-hidden">
+                    <img
+                      src="/Assets Tailwind Final Project/front-view-stacked-books-ladders-education-day.jpg"
+                      alt="books"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div class="card_konten py-4 px-12">
+                    <h2 class="card_title mb-2 font-semibold text-lg">
+                      Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="card_description text-xs font-extralight mb-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum molestiae, voluptatum dolorem
+                    </p>
+                    <div class="card_ratings text-star-yeloow mb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card_price flex justify-between items-center">
+                      <h1 class="font-semibold text-base pb-2">$99</h1>
+                      <button
+                        class="bg-blue-btn rounded-md px-1 py-1 font-thin text-xs"
+                      >
+                        Add to Cart +
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-7/12 mx-auto mt-52 mb-5">
+      <div class="flex justify-between">
+          <p class="font-thin tracking-wide">
+            &copy; 2023 Cek Toko Sebelah. All Rights Reserved.
+          </p>
+        <div class="flex flex-row text-2xl">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter pl-3"></i></a>
+          <a href=""><i class="fa-brands fa-github pl-3"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
